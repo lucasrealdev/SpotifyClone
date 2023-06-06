@@ -1,7 +1,6 @@
 import { View, Text, Image } from "react-native";
 import {MenuItem} from "./MenuItem";
 import { Feather } from "@expo/vector-icons";
-import { AntDesign } from '@expo/vector-icons'; 
 import colors from "tailwindcss/colors";
 
 export function Menu(){
