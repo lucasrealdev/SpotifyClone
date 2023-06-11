@@ -1,6 +1,7 @@
-import { View, Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity } from "react-native";
 import { styled } from "nativewind";
 import { useState } from "react";
+import React from "react";
 
 function MenuItemStyled(props){
     const combinedClass = `text-neutral-400 font-bold ${props.classText}`;
@@ -21,10 +22,11 @@ function MenuItemStyled(props){
         }
         settextHover(props.textLeave);
     };
+
     return(
         <TouchableOpacity className="flex flex-row gap-3 items-center mb-4" {...props}
         onMouseEnter={() => handleMouseEnter()}
-        onMouseLeave={() => handleMouseLeave()}>
+        onMouseLeave={() => handleMouseLeave()}> 
             {props.icon}
             <Text className={`${combinedClass} ${textHover}`}>{props.label}</Text>
         </TouchableOpacity>

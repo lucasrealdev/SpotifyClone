@@ -17,7 +17,6 @@ export function TopBar(){
       }, []);
 
     const getIconLeft = () => {
-    console.log(windowWidth)
     if (windowWidth > 767) {
         return <Image source={require('../assets/leftArrow.png')} className="w-[33px] h-[33px]" resizeMode="contain"/>
     } else {
